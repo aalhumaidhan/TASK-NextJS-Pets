@@ -17,7 +17,8 @@ function PetItem({ pet }) {
   const [isAdopted, setIsAdopted] = useState(false);
 
   function adoptPet() {
-    setIsAdopted(true);
+    if (confirm(`Are you sure you want to adopt this ${pet.type}?`))
+      setIsAdopted(true);
   }
 
   if (isAdopted) return null;
