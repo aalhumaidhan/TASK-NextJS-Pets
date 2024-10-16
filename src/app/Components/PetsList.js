@@ -1,20 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import PetItem from "./PetItem";
-import PetsQuery from "./PetsQuery";
 
 function PetsList({ pets }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("");
 
   function handleSearch(event) {
-    console.log(query);
     setQuery(event.target.value);
   }
 
   function handleType(event) {
-    console.log(type);
     setType(event.target.value);
   }
 
