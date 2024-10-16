@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import PetsQuery from "./PetsQuery";
+import PetItem from "./PetItem";
 
 function PetsList({ pets }) {
   const [query, setQuery] = useState("");

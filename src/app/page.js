@@ -1,4 +1,5 @@
 import pets from "./data/pets";
+import PetsList from "./Components/PetsList";
 
 export default function Home() {
   return (
